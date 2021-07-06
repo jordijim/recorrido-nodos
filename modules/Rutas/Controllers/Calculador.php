@@ -38,6 +38,7 @@ class Calculador
 
         while( $this->arrival_at_destination == false ){
             $this->get_low_cost_from_city($this->current_route[count($this->current_route)-1]['city_key'], null);
+            dd($this->current_route);
         }
 
         dd($this->current_route);
